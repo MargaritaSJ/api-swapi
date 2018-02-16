@@ -16,7 +16,7 @@ $(document).ready(function () {
           };
                       /*<button type="button" class="btn btn-primary btn-data" data-toggle="modal" data-target="#exampleModal">' ${data.name} '</button>*/
           const characters = `
-          <div class="col-sm-6 col-lg-1 p-1 characters" data-toggle="modal" data-target=".exampleModal">
+          <div class="col-xs-4 col-sm-6 col-lg-1 p-1 characters" data-toggle="modal" data-target=".exampleModal">
             <img class="card-img-top card-modal" src="https://starwars-visualguide.com/assets/img/characters/${i}.jpg" alt="${data.name}" data-number="${i+1}">
           </div>
           <!-- Modal -->
