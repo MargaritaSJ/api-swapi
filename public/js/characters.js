@@ -1,5 +1,7 @@
 $(document).ready(function () {
   const containerCards = document.getElementById('card-deck');
+  const modal = document.getElementById('body');
+  let imgCard = document.getElementsByTagName('img');
   //  Invocar fetch con la URL, de manera predeterminada, la API de extracción utiliza el método GET
   getFetch();
   function getFetch() {
@@ -14,14 +16,9 @@ $(document).ready(function () {
             return i = 18;
           };
           const characters = `
-          <div class="col-md-4 d-flex align-content-lg-stretch">
-            <div class="card">
-              <img class="card-img-top" src="https://starwars-visualguide.com/assets/img/characters/${i}.jpg" alt="${data.name}">
-              <div class="card-body">
-                <h5 class="card-title">${data.name}</h5>
-              </div>
-            </div>
-        </div>`;
+          <div class="col-sm-6 col-lg-1 p-1">
+              <img class="card-img-top card-modal" src="https://starwars-visualguide.com/assets/img/characters/${i}.jpg" alt="${data.name}">
+          </div>`;
           containerCards.innerHTML += characters;
         })
         .catch(function (error) {
@@ -30,4 +27,3 @@ $(document).ready(function () {
     }
   };
 });
-
