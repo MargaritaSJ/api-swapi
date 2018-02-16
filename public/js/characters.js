@@ -1,13 +1,6 @@
 $(document).ready(function () {
   const containerCards = document.getElementById('card-deck');
   const modal = document.getElementById('body');
-
-  let name = $('#name');
-  let height = $('#height');
-  let weight = $('#weight');
-  let birth = $('#birth');
-  let gender = $('#gender');
-  const homeWorld = $('#homeWorld');  
   //  Invocar fetch con la URL, de manera predeterminada, la API de extracción utiliza el método GET
   getFetch();
   function getFetch() {
