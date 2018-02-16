@@ -51,6 +51,11 @@ html {
   width: 15rem;
   font-size: 1rem;
 }
+
+.img-characters{
+  width: 40%;
+}
+
 @media (min-width: 992px) {
   .img-size {
     height: 65vh;
